@@ -921,7 +921,7 @@ DP.Shared = {
         "followb",
         AnimationOptions = {
             EmoteLoop = true,
-            EmoteMoving = false,
+            EmoteMoving = true,
             -- We can set this to true for lols, however it messes up if you walk through doors. Either player can press X to cancel the shared emotes
         }
     },
@@ -1025,6 +1025,54 @@ DP.Shared = {
             SyncOffsetFront = 0.11,
             EmoteMoving = false,
             EmoteLoop = true,
+        }
+    },
+
+    -- Custom Shared Emotes
+    ["couple1f"] = {
+        "karxem@couple_f",
+        "karxem_couple_f_clip",
+        "Couple Pose F 1",
+        "couple1m",
+        AnimationOptions = {
+            EmoteMoving = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.02
+        }
+    },
+    ["couple1m"] = {
+        "karxem@couple_m",
+        "karxem_couple_m_clip",
+        "Couple Pose M 1",
+        "couple1f",
+        AnimationOptions = {
+            EmoteMoving = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.02
+        }
+    },
+    ["couple2f"] = {
+        "karxem@couple2_f",
+        "karxem_coupel2_f_clip",
+        "Couple Pose F 2",
+        "couple2m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+            SyncOffsetSide = 0.1
+        }
+    },
+    ["couple2m"] = {
+        "karxem@couple2_m",
+        "karxem_couple2_m_clip",
+        "Couple Pose M 2",
+        "couple2f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+            SyncOffsetSide = 0.1
         }
     },
 }
@@ -7103,6 +7151,16 @@ DP.Emotes = {
             EmoteMoving = true,
         }
     },
+    ["couple3"] = {"karxem@couple2_f", "karxem_coupel2_f_clip", "Couple 3", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true,
+   }},
+   ["couple4"] = {"karxem@couple2_m", "karxem_couple2_m_clip", "Couple 4", AnimationOptions =
+   {
+      EmoteMoving = false,
+      EmoteLoop = true,
+   }},
 }
 
 --- EMOTES WITH 1 OR 2 PROPS ---
