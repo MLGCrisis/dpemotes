@@ -1028,7 +1028,7 @@ DP.Shared = {
         }
     },
 
-    -- Custom Shared Emotes
+    -- MLGC Custom Shared Emotes
     ["couple1f"] = {
         "karxem@couple_f",
         "karxem_couple_f_clip",
@@ -1036,6 +1036,7 @@ DP.Shared = {
         "couple1m",
         AnimationOptions = {
             EmoteMoving = true,
+            EmoteLoop = true,
             EmoteDuration = 10000,
             SyncOffsetFront = 0.02
         }
@@ -1047,17 +1048,20 @@ DP.Shared = {
         "couple1f",
         AnimationOptions = {
             EmoteMoving = true,
+            EmoteLoop = true,
             EmoteDuration = 10000,
             SyncOffsetFront = 0.02
         }
     },
-    ["couple2f"] = {
+    ---------------------------- NEED TO FIX ----------------------------
+    ["couple2f"] = { 
         "karxem@couple2_f",
         "karxem_coupel2_f_clip",
         "Couple Pose F 2",
         "couple2m",
         AnimationOptions = {
             EmoteMoving = false,
+            EmoteLoop = true,
             EmoteDuration = 10000,
             SyncOffsetFront = 0.2,
             SyncOffsetSide = 0.1
@@ -1070,11 +1074,758 @@ DP.Shared = {
         "couple2f",
         AnimationOptions = {
             EmoteMoving = false,
+            EmoteLoop = true,
             EmoteDuration = 10000,
             SyncOffsetFront = 0.2,
             SyncOffsetSide = 0.1
         }
     },
+    ---------------------------- NEED TO FIX ----------------------------
+    ["couple3f"] = { 
+        "karxem@couple3_f",
+        "karxem_couple3_f_clip",
+        "Couple Pose F 3",
+        "couple3m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple3m"] = {
+        "karxem@couple3_m",
+        "karxem_couple3_m_clip",
+        "Couple Pose M 3",
+        "couple3f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple4f"] = { 
+        "mx@couplefemale",
+        "clipcouple_female",
+        "Couple Pose F 4",
+        "couple4m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple4m"] = {
+        "mx@couplemale",
+        "clipcouple_male",
+        "Couple Pose M 4",
+        "couple4f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple5f"] = { 
+        "mx@piggypack_a",
+        "mxclip_a",
+        "Couple Piggy Back F",
+        "couple5m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple5m"] = {
+        "mx@piggypack_b",
+        "mxanim_b",
+        "Couple Piggy Back M",
+        "couple5f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple6f"] = { 
+        "mx@couple1_a",
+        "mx@couple1_a_clip",
+        "Couple Pose F 6",
+        "couple6m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple6m"] = {
+        "mx@couple1_b",
+        "mx@couple1_b_clip",
+        "Couple Pose M 6",
+        "couple6f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple7f"] = { 
+        "mx@couple2_a",
+        "mx@couple2_clip",
+        "Couple Pose F 7",
+        "couple7m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple7m"] = {
+        "mx@couple2_b",
+        "mx@couple2b_clip",
+        "Couple Pose M 7",
+        "couple7f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple8f"] = { 
+        "mx@couple3_a",
+        "mx@couple3_a_clip",
+        "Couple Pose F 8",
+        "couple8m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple8m"] = {
+        "mx@couple3_b",
+        "mx@couple3_b_clip",
+        "Couple Pose M 8",
+        "couple8f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple9f"] = { 
+        "mx@couplephone_f",
+        "mx@couplephone_f_clip",
+        "Couple Phone F",
+        "couple9m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple9m"] = {
+        "mx@couplephone_m",
+        "mx@couplephone_m_clip",
+        "Couple Phone M",
+        "couple9f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple10f"] = { 
+        "mx@couple1_a",
+        "mx@couple1_a_clip",
+        "Couple Pose F 10",
+        "couple10m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple10m"] = {
+        "mx@couple1_b",
+        "mx@couple1_b_clip",
+        "Couple Pose M 10",
+        "couple10f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple11f"] = { 
+        "mx@couple2_a",
+        "mx@couple2_a_clip",
+        "Couple Pose F 11",
+        "couple11m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple11m"] = {
+        "mx@couple2_b",
+        "mx@couple2_b_clip",
+        "Couple Pose M 11",
+        "couple11f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple12f"] = { 
+        "mx@couple3_a",
+        "mx@couple3_a_clip",
+        "Couple Pose F 12",
+        "couple12m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple12m"] = {
+        "mx@couple3_b",
+        "mx@couple3_b_clip",
+        "Couple Pose M 12",
+        "couple12f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple13f"] = { 
+        "mx@couple4_a",
+        "mx@couple4_a_clip",
+        "Couple Pose F 13",
+        "couple13m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple13m"] = {
+        "mx@couple4_b",
+        "mx@couple4_b_clip",
+        "Couple Pose M 13",
+        "couple13f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple14f"] = { 
+        "mx@couple5_a",
+        "mx@couple5_a_clip",
+        "Couple Pose F 14",
+        "couple14m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple14m"] = {
+        "mx@couple5_b",
+        "mx@couple5_b_clip",
+        "Couple Pose M 14",
+        "couple14f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple15f"] = { 
+        "mx@pack4.1_a",
+        "mx@pack4.1_a_clip",
+        "Couple Pose F 15",
+        "couple15m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple15m"] = {
+        "mx@pack4.1_b",
+        "mx@pack4.1_b_clip",
+        "Couple Pose M 15",
+        "couple15f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple16f"] = { 
+        "mx@couple4.2_a",
+        "mx@couple4.2_a_clip",
+        "Couple Pose F 16",
+        "couple16m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple16m"] = {
+        "mx@couple4.2_b",
+        "mx@couple4.2_b_clip",
+        "Couple Pose M 16",
+        "couple16f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple17f"] = { 
+        "mx@couple4.3_a",
+        "mx@couple4.3_a_clip",
+        "Couple Pose F 17",
+        "couple17m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple17m"] = {
+        "mx@couple4.3_b",
+        "mx@couple4.3_b_clip",
+        "Couple Pose M 17",
+        "couple17f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple18f"] = { 
+        "mx@couple4.4_a",
+        "mx@couple4.4_a_clip",
+        "Couple Pose F 18",
+        "couple18m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple18m"] = {
+        "mx@couple4.4_b",
+        "mx@couple4.4_b_clip",
+        "Couple Pose M 18",
+        "couple18f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple19f"] = { 
+        "mx@couple4.5_a",
+        "mx@couple4.5_a_clip",
+        "Couple Pose F 19",
+        "couple19m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple19m"] = {
+        "mx@couple4.5_b",
+        "mx@couple4.5_b_clip",
+        "Couple Pose M 19",
+        "couple19f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple20f"] = { 
+        "lovers_couple_pack@anim",
+        "sit_on_lap_atc_full",
+        "Couple Pose F 20",
+        "couple20m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple20m"] = {
+        "lovers_couple_pack@anim",
+        "sit_on_lap_vic_full",
+        "Couple Pose M 20",
+        "couple20f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple21f"] = { 
+        "lovers_couple_pack@anim",
+        "sit_on_lap_atc_idle",
+        "Couple Pose F 21",
+        "couple21m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple21m"] = {
+        "lovers_couple_pack@anim",
+        "sit_on_lap_vic_idle",
+        "Couple Pose M 21",
+        "couple21f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple22f"] = { 
+        "lovers_couple_pack@anim",
+        "sitseatedhug_f",
+        "Couple Pose F 22",
+        "couple22m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple22m"] = {
+        "lovers_couple_pack@anim",
+        "sitseatedhug_m",
+        "Couple Pose M 22",
+        "couple22f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple23f"] = { 
+        "lovers_couple_pack@anim",
+        "sitarmsaround_atc",
+        "Couple Pose F 23",
+        "couple23m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple23m"] = {
+        "lovers_couple_pack@anim",
+        "sitarmsaround_vic",
+        "Couple Pose M 23",
+        "couple23f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple24f"] = { 
+        "lovers_couple_pack@anim",
+        "sitarmsaround_atc_idle",
+        "Couple Pose F 24",
+        "couple24m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple24m"] = {
+        "lovers_couple_pack@anim",
+        "sitarmsaround_vic_idle",
+        "Couple Pose M 24",
+        "couple24f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple25f"] = { 
+        "lovers_couple_pack@anim",
+        "navy_kiss_atc",
+        "Couple Pose F 25",
+        "couple25m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple25m"] = {
+        "lovers_couple_pack@anim",
+        "navy_kiss_vic",
+        "Couple Pose M 25",
+        "couple25f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple26f"] = { 
+        "lovers_couple_pack@anim",
+        "hug_n_kiss_atc",
+        "Couple Pose F 26",
+        "couple26m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple26m"] = {
+        "lovers_couple_pack@anim",
+        "hug_n_kiss_vic",
+        "Couple Pose M 26",
+        "couple26f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple27f"] = { 
+        "lovers_couple_pack@anim",
+        "hug_atc",
+        "Couple Pose F 27",
+        "couple27m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple27m"] = {
+        "lovers_couple_pack@anim",
+        "hug_vic",
+        "Couple Pose M 27",
+        "couple27f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple28f"] = { 
+        "lovers_couple_pack@anim",
+        "back_rejection_atc",
+        "Couple Pose F 28",
+        "couple28m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple28m"] = {
+        "lovers_couple_pack@anim",
+        "back_rejection_vic",
+        "Couple Pose M 28",
+        "couple28f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple29f"] = { 
+        "lovers_couple_pack@anim",
+        "back_hug_atc",
+        "Couple Pose F 29",
+        "couple29m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple29m"] = {
+        "lovers_couple_pack@anim",
+        "back_hug_vic",
+        "Couple Pose M 29",
+        "couple29f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple30f"] = { 
+        "lovers_couple_pack@anim",
+        "arms_around_shoulder_atc",
+        "Couple Pose F 30",
+        "couple30m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple30m"] = {
+        "lovers_couple_pack@anim",
+        "arms_around_shoulder_vic",
+        "Couple Pose M 30",
+        "couple30f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple31f"] = { 
+        "murda@sinanimation09",
+        "sinanimation09",
+        "Couple Pose F 31",
+        "couple31m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple31m"] = {
+        "murda@sinanimation11",
+        "sinanimation11",
+        "Couple Pose M 31",
+        "couple31f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple32f"] = { 
+        "murda@sinanimation06",
+        "sinanimation06",
+        "Couple Pose F 32",
+        "couple32m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple32m"] = {
+        "murda@sinanimation07",
+        "sinanimation07",
+        "Couple Pose M 32",
+        "couple32f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple33f"] = { 
+        "murda@danoanim",
+        "danoanim",
+        "Couple Pose F 33",
+        "couple33m",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+    ["couple33m"] = {
+        "murda@danoanim",
+        "ceceanim",
+        "Couple Pose M 33",
+        "couple33f",
+        AnimationOptions = {
+            EmoteMoving = false,
+            EmoteLoop = true,
+            EmoteDuration = 10000,
+            SyncOffsetFront = 0.2,
+        }
+    },
+
+    -- MLGC Custom Emotes End
 }
 
 --- DANCING EMOTES, SOME WITH PROPS ---
@@ -7151,16 +7902,755 @@ DP.Emotes = {
             EmoteMoving = true,
         }
     },
-    ["couple3"] = {"karxem@couple2_f", "karxem_coupel2_f_clip", "Couple 3", AnimationOptions =
-   {
-      EmoteMoving = false,
-      EmoteLoop = true,
-   }},
-   ["couple4"] = {"karxem@couple2_m", "karxem_couple2_m_clip", "Couple 4", AnimationOptions =
-   {
-      EmoteMoving = false,
-      EmoteLoop = true,
-   }},
+
+    -- MLGC Custom Emotes
+    ["posef1"] = {
+        "steph31@animation",
+        "steph31_clip",
+        "Female Pose 1",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef2"] = {
+        "anim@luxury_custom_pose_props",
+        "luxury_custom_pose_props_clip",
+        "Female Pose 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef3"] = {
+        "anim@luxury_custom_pose13",
+        "luxury_custom_pose13_clip",
+        "Female Pose 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef4"] = {
+        "anim@luxury_custom_pose21",
+        "luxury_custom_pose21_clip",
+        "Female Pose 4",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef5"] = {
+        "anim@luxury_custom_pose4",
+        "luxury_custom_pose4_clip",
+        "Female Pose 5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef6"] = {
+        "anim@female_model_0",
+        "f_model_0_clip",
+        "Female Pose 6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef7"] = {
+        "anim@luxury_legs_hands",
+        "luxury_legs_clip",
+        "Female Pose 7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef8"] = {
+        "cruduta3@animation",
+        "cruduta3_clip",
+        "Female Pose 8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef9"] = {
+        "luxury@animation",
+        "luxury_clip",
+        "Female Pose 9",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef10"] = {
+        "selfieleanpose@animation",
+        "selfiepose_clip",
+        "Female Pose 10",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef11"] = {
+        "leanwallpose@animation",
+        "leanwall_clip",
+        "Female Pose 11",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef12"] = {
+        "thinkerpose@animation",
+        "thinker_clip",
+        "Female Pose 12",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef13"] = {
+        "fuckyouselfie@animation",
+        "fuckyouselfie_clip",
+        "Female Pose 13",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef14"] = {
+        "waitingpose@animation",
+        "waitingpose_clip",
+        "Female Pose 14",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef15"] = {
+        "LLShop@randompose1",
+        "llshop_clip",
+        "Female Pose 15",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef16"] = {
+        "LLShop@randompose2",
+        "llshop_clip",
+        "Female Pose 16",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef17"] = {
+        "LLShop@randompose3",
+        "llshop_clip",
+        "Female Pose 17",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef18"] = {
+        "LLShop@randompose4",
+        "llshop_clip",
+        "Female Pose 18",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef19"] = {
+        "LLShop@randompose5",
+        "llshop_clip",
+        "Female Pose 19",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef20"] = {
+        "LLShop@pose",
+        "llshop_clip",
+        "Female Pose 20",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["posef21"] = {
+        "LLShop@lookbehind",
+        "llshop_clip",
+        "Female Pose 21",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+
+    ["singerf1"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "sing_a_song_1",
+        "Female Singer 1",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf2"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "sing_a_song_2",
+        "Female Singer 2",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf3"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "sing_a_song_3",
+        "Female Singer 3",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf4"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "sing_a_song_4",
+        "Female Singer 4",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf5"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "sing_a_song_5",
+        "Female Singer 5",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf6"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "up_beat_1",
+        "Female Singer 6",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf7"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "up_beat_2",
+        "Female Singer 7",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf8"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "up_beat_3",
+        "Female Singer 8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf9"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "up_beat_4",
+        "Female Singer 9",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["singerf10"] = {
+        "jazzrockabillybluesetc_singer@anim",
+        "up_beat_5",
+        "Female Singer 10",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["sexypose1"] = {
+        "murda@sinsanimations02",
+        "sinsanimation02",
+        "Sexy Pose 1",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["sexypose2"] = {
+        "nikyminaj@queensisters",
+        "nikyminaj_clip",
+        "Sexy Pose 2",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose3"] = {
+        "sunpose1@queensisters",
+        "sunpose1_clip",
+        "Sexy Pose 3", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose4"] = {
+        "customposesit@queensisters",
+        "custompose_clip",
+        "Sexy Pose 4",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose5"] = {
+        "badrichgirl@queensisters",
+        "badrichgirl_clip",
+        "Sexy Pose 5",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose6"] = {
+        "assleansit@queensisters",
+        "asslean_clip",
+        "Sexy Pose 6",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose7"] = {
+        "handonhippose@queensisters",
+        "handonhip_clip",
+        "Sexy Pose 7",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose8"] = {
+        "handonwindow@queensisters",
+        "handonwindow_clip",
+        "Sexy Pose 8",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose9"] = {
+        "fuckfingerlips@queensisters",
+        "fuckfingerlips_clip",
+        "Sexy Pose 9",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose10"] = {
+        "sitsexylean@queensisters",
+        "sitsexy_clip",
+        "Sexy Pose 10",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose11"] = {
+        "posecustom@queensisters",
+        "posecustom_clip",
+        "Sexy Pose 11",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose12"] = {
+        "hotpose@queensisters",
+        "hotpose_clip",
+        "Sexy Pose 12",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose13"] = {
+        "sitdownonknees@queensisters",
+        "sitdown_clip",
+        "Sexy Pose 13",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sexypose14"] = {
+        "walllean2@queensisters",
+        "walllean2_clip",
+        "Sexy Pose 14",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sittingbored"] = {
+        "pineapple@sittingbored",
+        "sittingbored",
+        "Sitting Bored",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie8"] = {
+        "murda@femalepose01",
+        "femalepose01",
+        "Selfie 8",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie9"] = {
+        "mirrorselfie2@queensisters",
+        "mirrorselfie_clip",
+        "Selfie 9",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie10"] = {
+        "mirrorselfie3@queensisters",
+        "mirrorselfie2_clip",
+        "Selfie 10",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie11"] = {
+        "mirrorselfie4@queensisters",
+        "mirrorselfie4_clip",
+        "Selfie 11",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie12"] = {
+        "fuckyouselfie@queensisters",
+        "mirrorselfie_clip",
+        "Selfie 12",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfie13"] = {
+        "heartselfiemirror@queensisters",
+        "heartselfie_clip",
+        "Selfie 13",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["selfiecrouch4"] = {
+        "pineapple@mirrorcrouch",
+        "mirrorcrouch",
+        "Selfie Crouch 4",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["coverboobs"] = {
+        "murda@tiddies",
+        "tiddies",
+        "Cover Boobs",
+        AnimationOptions = {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale1"] = {
+        "luxurymods@animation_female_13", 
+        "animation_female_13_clip", 
+        "Luxury Female Pose", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+
+    ["LuxuryFemale2"] = {
+        "luxurymods@animation_female_18", 
+        "animation_female_18_clip", 
+        "Luxury Female Pose 2", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale3"] = {
+        "luxurymods@animation_female_21", 
+        "animation_female_21_clip", 
+        "Luxury Female Pose 3", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale4"] = {
+        "luxurymods@walk_female_pose", 
+        "walk_female_pose_clip", 
+        "Luxury Female Pose 4", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale5"] = {
+        "luxurymods@sit_female2", 
+        "sit_female2_clip", 
+        "Luxury Female Pose 5", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale6"] = {
+        "anim@luxury_custom_pose26", 
+        "luxury_custom_pose26_clip", 
+        "Luxury Female Pose 6", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale7"] = {
+        "anim@luxury_custom_pose28", 
+        "luxury_custom_pose28_clip", 
+        "Luxury Female Pose 7", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale8"] = {
+        "anim@luxury_custom_pose37", 
+        "luxury_custom_pose37_clip", 
+        "Luxury Female Pose 8", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale9"] = {
+        "anim@luxury_custom_pose38", 
+        "luxury_custom_pose38_clip", 
+        "Luxury Female Pose 9", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["LuxuryFemale10"] = {
+        "anim@luxury_custom_pose44", 
+        "luxury_custom_pose44_clip", 
+        "Luxury Female Pose 10", 
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+    ["sitf1"] = {
+        "bankleansit@queensisters",
+        "sitlean_clip",
+        "Female Sit 1",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sitf2"] = {
+        "bankleansit@queensisters",
+        "sitlean_clip",
+        "Female Sit 2",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sitf3"] = {
+        "nikyminaj@queensisters",
+        "nikyminaj_clip",
+        "Female Sit 3",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sitf4"] = {
+        "sunpose1@queensisters",
+        "sunpose1_clip",
+        "Female Sit 4",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["sitf5"] = {
+        "customposesit@queensisters",
+        "custompose_clip",
+        "Female Sit 5",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = false,
+
+        }
+    },
+    ["exercise1"] = {
+        "mouse@basketball_jump",
+        "basketball_jump_clip",
+        "Exercise 1",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["exercise2"] = {
+        "mouse@crouched_female",
+        "crouched_female_clip",
+        "Exercise 2",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["exercise3"] = {
+        "mouse@gym_body",
+        "gym_body_clip",
+        "Exercise 3",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["exercise4"] = {
+        "mouse@gym_plank",
+        "gym_plank_clip",
+        "Exercise 4",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["exercise5"] = {
+        "mouse@side_plank",
+        "side_plank_clip",
+        "Exercise 5",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["exercise6"] = {
+        "mouse@sports_girl",
+        "sports_girl_clip",
+        "Exercise 6",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+
+        }
+    },
+    ["cowgirl"] = {
+        "cowgirl@sinkra",
+        "cowgirl_clip",
+        "Cowgirl",
+        AnimationOptions =
+        {
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+
+    -- MLGC Custom Emotes End
 }
 
 --- EMOTES WITH 1 OR 2 PROPS ---
