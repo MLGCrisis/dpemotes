@@ -3052,6 +3052,9 @@ DP.Dances = {
             EmoteMoving = false,
         }
     },
+    --MLGC Custom Dances
+   -- MLGC Custom Dances End
+
 }
 
 
@@ -8649,7 +8652,65 @@ DP.Emotes = {
             EmoteMoving = true,
         }
     },
+    ["armswirl"] = {"custom@armswirl", "armswirl", "Arm Swirl", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["armwave"] = {"custom@armwave", "armwave", "Arm Wave", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["circle_crunch"] = {"custom@circle_crunch", "circle_crunch", "Circle Crunch", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["dig"] = {"custom@dig", "dig", "Dig", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["gangnamstyle"] = {"custom@gangnamstyle", "gangnamstyle", "Gangnam Style", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["makarena"] = {"custom@makarena", "makarena", "Makarena", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["maraschino"] = {"custom@maraschino", "maraschino", "Maraschino", AnimationOptions =
+    {
+        EmoteMoving = false,
+        EmoteLoop = true
+    }},
 
+    ["salsa"] = {"custom@salsa", "salsa", "Salsa", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = true
+    }},
+ 
+    ["what_idk"] = {"custom@what_idk", "what_idk", "What", AnimationOptions =
+    {
+        EmoteMoving = false,
+        EmoteLoop = false
+    }},
+ 
+    ["pickfromground"] = {"custom@pickfromground", "pickfromground", "Pick From Ground", AnimationOptions =
+    {
+         EmoteMoving = false,
+         EmoteLoop = false
+    }},
     -- MLGC Custom Emotes End
 }
 
@@ -9404,7 +9465,8 @@ DP.PropEmotes = {
         "mp_player_int_eat_burger",
         "Apple",
         AnimationOptions = {
-            Prop = 'sf_prop_sf_apple_01b',
+            --Prop = 'sf_prop_sf_apple_01b',
+            Prop = 'knjgh_apple',
             PropBone = 60309,
             PropPlacement = {
                 0.0,
@@ -14465,6 +14527,186 @@ DP.PropEmotes = {
     EmoteMoving = true,
     }
 },
+-- MLGC Custom Prop Emotes
+
+    ["smore"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Eat a smore", 
+        AnimationOptions =
+        {
+            Prop = 'bzzz_food_dessert_a',
+            PropBone = 18905,
+            PropPlacement = {0.15, 0.03, 0.03, -42.0, -36.0, 0.0},
+            EmoteMoving = true,
+        }
+    },
+    ["pizzaslice1"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Pizza Slice 1",
+        AnimationOptions = {
+            Prop = "knjgh_pizzaslice1",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["pizzaslice2"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Pizza Slice 2",
+        AnimationOptions = {
+            Prop = "knjgh_pizzaslice2",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["pizzaslice3"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Pizza Slice 3",
+        AnimationOptions = {
+            Prop = "knjgh_pizzaslice3",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["pizzaslice4"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Pizza Slice 4",
+        AnimationOptions = {
+            Prop = "knjgh_pizzaslice4",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["pizzaslice5"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Pizza Slice 5",
+        AnimationOptions = {
+            Prop = "knjgh_pizzaslice5",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["carrot"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Carrot",
+        AnimationOptions = {
+            Prop = "knjgh_carrot",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["banana"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Banana",
+        AnimationOptions = {
+            Prop = "knjgh_banana",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["orange"] = {
+        "mp_player_inteat@burger", 
+        "mp_player_int_eat_burger", 
+        "Orange",
+        AnimationOptions = {
+            Prop = "knjgh_orange",
+            PropBone = 18905,
+            PropPlacement = {
+                0.13,
+                0.15,
+                0.0,
+                -100.0,
+                0.0,
+                -20.0
+            },
+            EmoteLoop = true,
+            EmoteMoving = true,
+        }
+    },
+    ["propose"] = {
+        "ultra@propose",
+        "propose",
+        "Propose",
+        AnimationOptions = {
+            Prop = "ultra_ringcase",
+            PropBone = 6286,
+            PropPlacement = { 0.08, 0.01, -0.055, 0.0, 180.0, -90.0 },
+            EmoteLoop = true,
+            EmoteMoving = false,
+        }
+    },
+
+-- MLGC Custom Prop Emotes End
 
 }
 

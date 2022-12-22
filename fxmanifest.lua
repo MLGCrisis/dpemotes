@@ -55,3 +55,11 @@ data_file 'DLC_ITYP_REQUEST' 'natty_props_lollipops.ytyp'
 
 data_file 'DLC_ITYP_REQUEST' 'apple_1.ytyp'
 
+data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_food_dessert_a.ytyp'
+
+data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_fireworks_props_pack.ytyp'
+
+data_file 'DLC_ITYP_REQUEST' 'stream/knjgh_pizzas.ytyp'
+
+data_file 'DLC_ITYP_REQUEST' 'stream/knjgh_fruits.ytyp'
+
